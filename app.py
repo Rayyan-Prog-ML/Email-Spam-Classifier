@@ -69,6 +69,7 @@ st.markdown(custom_css, unsafe_allow_html=True)
 # -------------------- App Title --------------------
 st.markdown("<h1 style='text-align: center;'>📨 Spam Detection App</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center;'>Identify whether an incoming message is spam or safe in real time.</p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center;'>BY RAYYAN MUSTAFA.</p>", unsafe_allow_html=True)
 
 # -------------------- Load Artifacts --------------------
 vocab     = joblib.load('vocab.joblib')
