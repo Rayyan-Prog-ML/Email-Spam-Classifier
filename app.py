@@ -1,5 +1,4 @@
-# Debug: list files in your repo
-print("⏳ files in cwd:", os.listdir(os.getcwd()))
+
 
 import joblib
 from transform_text import transform_text
