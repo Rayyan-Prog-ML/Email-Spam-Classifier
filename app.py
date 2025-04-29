@@ -18,7 +18,7 @@ except (FileNotFoundError, IOError):
     joblib.dump(vectorizer, 'vectorizer.joblib')
 
 # Streamlit app
-st.title("Spam Detection App")("Spam Detection App")
+st.title("Spam Detection App")
 input_sms = st.text_area("Enter the message")
 
 if st.button('Predict'):
