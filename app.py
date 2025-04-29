@@ -81,7 +81,7 @@ vectorizer = TfidfVectorizer(vocabulary=vocab)
 vectorizer.fit(texts)
 
 # -------------------- Input Area --------------------
-input_sms = st.text_area("Enter the message", height=150)
+input_sms = st.text_area("Enter the message", height=100)
 
 # -------------------- Prediction --------------------
 if st.button('Predict'):
