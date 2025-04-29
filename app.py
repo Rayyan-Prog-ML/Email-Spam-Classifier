@@ -6,16 +6,10 @@ import streamlit as st
 
 # Load model
 NB_model = joblib.load('naive_bayes_model.joblib')
-
-# Load or train vectorizer
-try:
-    vectorizer = joblib.load('vectorizer.joblib')
-except (FileNotFoundError, IOError):
-    df = pd.read_csv('Spam_emails_cleaned.csv')
-    texts = df['Transformed_text'].fillna('').tolist()
-    vectorizer = TfidfVectorizer()
-    vectorizer.fit(texts)
-    joblib.dump(vectorizer, 'vectorizer.joblib')
+df = pd.read_csv('Spam_emails_cleaned.csv')
+texts = df['Transformed_text'].fillna('').tolist()
+vectorizer = TfidfVectorizer()
+vectorizer.fit(texts)
 
 # Streamlit app
 st.title("Spam Detection App")
