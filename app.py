@@ -1,4 +1,3 @@
-!pip install nltk
 import nltk
 nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
@@ -119,8 +118,6 @@ plt.show()
 
 # applying smote and random forest
 
-!pip install imbalanced-learn
-
 from imblearn.over_sampling import SMOTE
 
 # Separate features (X) and target variable (y)
@@ -149,10 +146,7 @@ rf_y_pred = model.predict(X_test)
 # Evaluate the model
 print(classification_report(y_test, rf_y_pred))
 
-"""### Naive beyes
-
-"""
-
+# Naive beyes
 NB_model = MultinomialNB()
 NB_model.fit(X_train, y_train)
 nb_y_test_pred = NB_model.predict(X_test)
