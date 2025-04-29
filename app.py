@@ -72,8 +72,6 @@ df['Transformed_text']=df['Text'].apply(transform_text)
 df.head()
 
 #wordcloud
-!pip install matplotlib
-!pip install wordcloud
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 wc=WordCloud(width=500, height=500, min_font_size=10, background_color='white')
