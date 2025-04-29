@@ -16,7 +16,7 @@ st.set_page_config(
 
 # -------------------- Header Image --------------------
 header_image = Image.open("header_visual.PNG")
-resized_image = header_image.resize((300, 80))  # width x height in pixels
+resized_image = header_image.resize((300, 200))  # width x height in pixels
 st.image(resized_image)
 
 # -------------------- Custom Dark Theme CSS --------------------
