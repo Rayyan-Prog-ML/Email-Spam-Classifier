@@ -1,5 +1,10 @@
+# Debug: list files in your repo
+print("⏳ files in cwd:", os.listdir(os.getcwd()))
+
 import joblib
 from transform_text import transform_text
+
+import os
 
 NB_model=joblib.load('naive_bayes_model.joblib')
 vectorizer=joblib.load("vectorizer.joblib")
