@@ -18,7 +18,7 @@ st.set_page_config(
 
 # Open and resize the image
 header_image = Image.open("header_visual.PNG")
-resized_image = header_image.resize((250, 200))
+resized_image = header_image.resize((250, 150))
 
 # Convert the image to base64 for embedding in HTML
 import io
