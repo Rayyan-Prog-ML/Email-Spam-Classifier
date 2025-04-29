@@ -203,7 +203,6 @@ nb_y_train_pred = NB_model.predict(X_train)
 
 import joblib
 import re
-from transform_text import transform_text
 
 NB_model=joblib.load('naive_bayes_model.joblib')
 vectorizer=joblib.load("vectorizer.joblib")
