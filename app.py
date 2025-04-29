@@ -16,25 +16,25 @@ st.set_page_config(
 
 # -------------------- Header Image --------------------
 
-# Open and resize the image
-header_image = Image.open("header_visual.PNG")
-resized_image = header_image.resize((250, 150))
+# # Open and resize the image
+# header_image = Image.open("header_visual.PNG")
+# resized_image = header_image.resize((250, 150))
 
-# Convert the image to base64 for embedding in HTML
-import io
-buffer = io.BytesIO()
-resized_image.save(buffer, format="PNG")
-encoded_image = base64.b64encode(buffer.getvalue()).decode()
+# # Convert the image to base64 for embedding in HTML
+# import io
+# buffer = io.BytesIO()
+# resized_image.save(buffer, format="PNG")
+# encoded_image = base64.b64encode(buffer.getvalue()).decode()
 
-# Display the image centered
-st.markdown(
-    f"""
-    <div style="text-align: center;">
-        <img src="data:image/png;base64,{encoded_image}" width="300" height="200">
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+# # Display the image centered
+# st.markdown(
+#     f"""
+#     <div style="text-align: center;">
+#         <img src="data:image/png;base64,{encoded_image}" width="300" height="200">
+#     </div>
+#     """,
+#     unsafe_allow_html=True
+# )
 # -------------------- Custom Dark Theme CSS --------------------
 custom_css = """
 <style>
