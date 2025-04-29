@@ -1,12 +1,10 @@
-
-
 import joblib
 from transform_text import transform_text
-
 import os
 
-NB_model=joblib.load('naive_bayes_model.joblib')
 vectorizer=joblib.load("vectorizer.joblib")
+NB_model=joblib.load('naive_bayes_model.joblib')
+
 
 import streamlit as st
 # Streamlit app
